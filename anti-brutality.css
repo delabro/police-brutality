@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+  font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin: 0 auto;
+    width: 88%;
+    max-width: 1080px;
+    padding-top: 4em;
+}
+
+header {
+    /*background-image: url(images/header1-smaller.jpg);*/
+    margin: 0 auto;
+    /*max-width: 100%;*/
+    background-size: cover;
+    min-height: 11.75em;
+}
+
+
+.align-right {
+    /*float: right;*/
+    margin: 1em 0 1em 1em;
+}
+
+.align-left {
+    /*float: left;*/
+    margin: 1em 1em 1em 0;
+}
+
+p {
+    padding-top: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.logo {
+    margin-top: -5.5em;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 233px
+}
+
+
+
+.left-column {
+    text-align: left;
+    display: flex;
+    align-items:center;
+    padding: 2em 0;
+   
+}
+
+
+
+.right-column {
+    text-align: right;
+      display: flex;
+      align-items:center;
+      flex-direction:row-reverse;
+      padding: 2em 0;
+
+}
+
+/*.background {
+   background: url(images/redbox.png);
+}*/
+
+/*.right-column img,
+.left-column img {
+    max-width: 60%;
+}*/
+
+.centre-column {
+  text-align: center;
+  margin: 0 auto;
+  max-width:40%;
+  padding-top:8em;
+}
+
+footer {
+  background: black;
+  padding:.1em;
+  color:white;
+  text-align: center;
+}
+
+#boxtype:hover image {
+filter: url(#matrix-invert);
+}
+
+.svgimage{
+  /*width: 1000px;*/
+}
+
+.graphics {
+  width: 50%;
+}
+
+.quote {
+  width:65%;
+  padding-left: 1em;
+}
+
+
+.clickbait img{
+  margin: 0 auto;
+  max-width: 50%;
+  display: block;
+  padding-bottom: 10em;
+}
+
+.clickbait img:hover {
+  -webkit-filter: invert(100%)
+
+}
+
+
+/* media-queries 
+------------------------------------------*/
+
+@media screen and (min-width:750px) {
+    .logo img {
+        max-width: 396px;
+    }
+    .logo {
+        margin-top: -10.5em;
+    }
+
+    .left-column {
+        max-width: 60%;
+        margin-right: auto;
+    }
+    .right-column {
+        max-width: 60%;
+        margin-left: auto;
+
+        .right-column img,
+.left-column img {
+    max-width: 40%;
+}
+}
+
+@media screen and (min-width:1400px) {
+    .left-column {
+        max-width: 60%;
+        margin-right: auto;
+    }
+    .right-column {
+        max-width: 60%;
+        margin-left: auto;
+    }
+    .logo img {
+        max-width: 500px;
+    }
+    .logo {
+        margin-top: -13.5em;
+    }
+
+    .right-column img,
+.left-column img {
+    max-width: 40%;
+}
+}
+
